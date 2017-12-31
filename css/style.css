@@ -1,90 +1,424 @@
-/* =============================================================================
-   HTML5 CSS Reset Minified - Eric Meyer
-   ========================================================================== */
+/*
+    Theme Name: Medilab
+    Theme URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+*/
 
-html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
-body{line-height:1}
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
-nav ul{list-style:none}
-blockquote,q{quotes:none}
-blockquote:before,blockquote:after,q:before,q:after{content:none}
-a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
-mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
-del{text-decoration:line-through}
-abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
-table{border-collapse:collapse;border-spacing:0}
-hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
-input,select{vertical-align:middle}
-li{list-style:none}
-
-
-/* =============================================================================
-   My CSS
-   ========================================================================== */
-
-/* ---- base ---- */
-
-html,body{
-	width:100%;
-	height:100%;
+body {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 20px;
+	color: #999999;
+	font-size: 300;
+	font-size: 16px;
+    background-color: #fff;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+h1, h2, h3, h4, h5, h6
+{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	color: #222222;
+}
+a, a:hover, a:focus, a:active{
+    outline: none;
 }
 
-html{
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+.section-padding{
+	padding-top: 60px;
+
+}
+h2 {
+    line-height: 20px;
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+}
+hr.botm-line {
+    height: 3px;
+    width: 60px;
+    background: #ffb737;
+    position: relative;
+    border: 0;
+    margin: 20px 0 20px 0;
 }
 
-canvas{
-  display:block;
-  vertical-align:bottom;
+/***************************************
+banner
+***************************************/
+.navbar {
+    margin-bottom: 0px;
+    border: 0px;
+}
+.navbar {
+    border-radius: 0px;
+}
+.navbar-default {
+    background-color: #fff;
+    padding: 20px 0;
+    transition: all 0.3s;
+}
+.navbar-default {
+    background-color: transparent;
+    border: 0px;
+}
+.navbar {
+    border-radius: 0px;
 }
 
-
-/* ---- stats.js ---- */
-
-.count-particles{
-  background: #000022;
-  position: absolute;
-  top: 48px;
-  left: 0;
-  width: 80px;
-  color: #13E8E9;
-  font-size: .8em;
-  text-align: left;
-  text-indent: 4px;
-  line-height: 14px;
-  padding-bottom: 2px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
+.navbar-brand
+{
+    font: normal 'Hind', sans-serif;
+	font-size: 30px;
+    text-decoration: none;
 }
 
-.js-count-particles{
-  font-size: 1.1em;
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #ffffff;
 }
 
-#stats,
-.count-particles{
-  -webkit-user-select: none;
-  margin-top: 5px;
-  margin-left: 5px;
+.top-nav-collapse {
+    padding: 0;
+    background: rgba(66, 165, 246, 0.68);
 }
 
-#stats{
-  border-radius: 3px 3px 0 0;
-  overflow: hidden;
+.white, .white:hover, .white:focus
+{
+	color: #fff;
+	width: 100% !important;
+}
+.block
+{
+	display: block;
+}
+.navbar-default .navbar-nav > li > a
+{
+	color: #fff;
+	font-size: 16px;
+	font-weight: 300;
+    text-decoration: none;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus
+{
+	color: #fff;
+}
+.navbar-fixed-top {
+    top: 0;
+}
+.navbar-fixed-bottom, .navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #e7e7e7;
+}
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+    max-height: 340px;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
 }
 
-.count-particles{
-  border-radius: 0 0 3px 3px;
+.img-responsive, .thumbnail a>img, .thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+img {
+    vertical-align: middle;
 }
 
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
 
-/* ---- particles.js container ---- */
+.col-md-2{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
 
-#particles-js{
-  width: 100%;
-  height: 100%;
-	position: fixed;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+@media (min-width: 1200px){
+    .container {
+        width: 1170px;
+    }
+}
+
+@media (min-width: 992px){
+    .col-md-12 {
+        width: 100%;
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+    }
+    .col-md-2 {
+        width: 14%;
+        float: left;
+    }
+}
+
+@media (min-width: 768px){
+    .navbar-header {
+        float: left;
+        margin-top: 15px;
+    }
+    .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+        margin-left: -15px;
+    }
+    .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .navbar-collapse {
+        width: auto;
+        border-top: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    .navbar-collapse.collapse {
+        display: block!important;
+        height: auto!important;
+        padding-bottom: 0;
+        overflow: visible!important;
+    }
+    .navbar-right {
+        float: right!important;
+        margin-right: -15px;
+    }
+    .navbar-nav {
+        float: left;
+        margin: 0;
+    }
+    .navbar-nav>li {
+        float: left;
+    }
+    .nav>li {
+        position: relative;
+        display: block;
+    }
+    .navbar-nav>li>a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+.cover-section{
+    background: url(../img/bg-banner.jpeg) left top no-repeat;
+    background-size: cover !important;
+    padding: 50px 0;
+}
+.section{
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
+.section .section-content{
+    position: relative;
+    top: 42%;
+    transform: translate(0, -42%);
+    -webkit-transform: translate(0, -42%);
+}
+.cover-section .bg{
+    background: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5s;
+    width: 100%;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    background: transparent;
+    border-bottom: 1px solid #FFFFFF;
+    color: #fff;
+    -webkit-animation: mymove 1s infinite;
+    animation: mymove 1s infinite;
+}
+
+.my-profile .profile img{
+    width: 300px;
+    border:5px solid #fff;
+    border-radius: 100%;
+}
+
+.my-profile p{
+    margin-top: 20px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.page-content {
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    color: #fff;
+}
+
+.my-skills{
+    margin-top: -170px;
+}
+
+.my-skills h3{
+    color: #fff;
+    margin-bottom:60px;
+    font-size: 25px;
+}
+
+#html {
+  margin: 20px;
+  width: 150px;
+  height: 150px;
+}
+
+#html h5{
+  position:absolute;
+  top:60px;
+  left:90px;
+  color: #fff;
+}
+
+#css {
+  margin: 20px;
+  width: 150px;
+  height: 150px;
+}
+
+#css h5{
+  position:absolute;
+  top:60px;
+  left:95px;
+  color: #fff;
+}
+
+#javascript {
+  margin: 20px;
+  width: 150px;
+  height: 150px;
+}
+
+#javascript h5{
+  position:absolute;
+  top:60px;
+  left:75px;
+  color: #fff;
+}
+
+#php {
+  margin: 20px;
+  width: 150px;
+  height: 150px;
+}
+
+#php h5{
+  position:absolute;
+  top:60px;
+  left:95px;
+  color: #fff;
+}
+
+#laravel {
+  margin: 20px;
+  width: 150px;
+  height: 150px;
+}
+
+#laravel h5{
+  position:absolute;
+  top:60px;
+  left:85px;
+  color: #fff;
+}
+
+#photoshop {
+  margin: 20px;
+  width: 150px;
+  height: 150px;
+}
+
+#photoshop h5{
+  position:absolute;
+  top:60px;
+  left:75px;
+  color: #fff;
+}
+
+.my-portofolio{
+    margin-top: -70px;
+}
+
+.my-portofolio h3{
+    color: #fff;
+    margin-bottom:60px;
+    font-size: 25px
+}
+
+.slider img{
+    width: 300px;
+}
+
+.contact-me{
+    margin-top: -40px;
+}
+
+.contact-body{
+    border:1px solid #fff;
+    width: 500px;
+}
+
+.contact-me h3{
+    color: #fff;
+    margin-bottom:60px;
+}
+
+.contact-me h4{
+    color: #fff;
+}
+
+.contact-me p{
+    margin-bottom: 20px;
+}
+
+@keyframes mymove {
+    0% {
+        padding-bottom: 15px;
+    }
+    50% {
+        padding-bottom: 20px;
+    }
+    100% {
+        padding-bottom: 15px;
+    }
 }
